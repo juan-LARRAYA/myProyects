@@ -1,0 +1,28 @@
+[2024-12-21T13:39:21.301+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: bashoperator.hello_with_bash scheduled__2023-10-30T00:00:00+00:00 [queued]>
+[2024-12-21T13:39:21.333+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: bashoperator.hello_with_bash scheduled__2023-10-30T00:00:00+00:00 [queued]>
+[2024-12-21T13:39:21.334+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-21T13:39:21.335+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2024-12-21T13:39:21.336+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-21T13:39:21.402+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): hello_with_bash> on 2023-10-30 00:00:00+00:00
+[2024-12-21T13:39:21.424+0000] {standard_task_runner.py:55} INFO - Started process 3531 to run task
+[2024-12-21T13:39:21.443+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bashoperator', 'hello_with_bash', 'scheduled__2023-10-30T00:00:00+00:00', '--job-id', '632', '--raw', '--subdir', 'DAGS_FOLDER/1-bashoperator.py', '--cfg-path', '/tmp/tmp7mj_htat']
+[2024-12-21T13:39:21.453+0000] {standard_task_runner.py:83} INFO - Job 632: Subtask hello_with_bash
+[2024-12-21T13:39:21.928+0000] {task_command.py:376} INFO - Running <TaskInstance: bashoperator.hello_with_bash scheduled__2023-10-30T00:00:00+00:00 [running]> on host a39b43f32cb0
+[2024-12-21T13:39:22.291+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bashoperator
+AIRFLOW_CTX_TASK_ID=hello_with_bash
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-30T00:00:00+00:00
+[2024-12-21T13:39:22.310+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-12-21T13:39:22.313+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "echo 'hello gente'"]
+[2024-12-21T13:39:22.343+0000] {subprocess.py:86} INFO - Output:
+[2024-12-21T13:39:22.353+0000] {subprocess.py:93} INFO - hello gente
+[2024-12-21T13:39:22.354+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-12-21T13:39:22.670+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=bashoperator, task_id=hello_with_bash, execution_date=20231030T000000, start_date=20241221T133921, end_date=20241221T133922
+[2024-12-21T13:39:22.860+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-12-21T13:39:23.390+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

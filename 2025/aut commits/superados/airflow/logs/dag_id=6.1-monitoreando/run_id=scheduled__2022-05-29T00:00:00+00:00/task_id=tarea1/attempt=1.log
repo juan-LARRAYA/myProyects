@@ -1,0 +1,28 @@
+[2024-12-21T20:24:12.698+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 6.1-monitoreando.tarea1 scheduled__2022-05-29T00:00:00+00:00 [queued]>
+[2024-12-21T20:24:12.737+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 6.1-monitoreando.tarea1 scheduled__2022-05-29T00:00:00+00:00 [queued]>
+[2024-12-21T20:24:12.738+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-21T20:24:12.739+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2024-12-21T20:24:12.739+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-21T20:24:12.792+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): tarea1> on 2022-05-29 00:00:00+00:00
+[2024-12-21T20:24:12.796+0000] {standard_task_runner.py:55} INFO - Started process 4089 to run task
+[2024-12-21T20:24:12.802+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '6.1-monitoreando', 'tarea1', 'scheduled__2022-05-29T00:00:00+00:00', '--job-id', '2259', '--raw', '--subdir', 'DAGS_FOLDER/6.1-monitoring.py', '--cfg-path', '/tmp/tmp53694pt2']
+[2024-12-21T20:24:12.803+0000] {standard_task_runner.py:83} INFO - Job 2259: Subtask tarea1
+[2024-12-21T20:24:12.913+0000] {task_command.py:376} INFO - Running <TaskInstance: 6.1-monitoreando.tarea1 scheduled__2022-05-29T00:00:00+00:00 [running]> on host a39b43f32cb0
+[2024-12-21T20:24:13.022+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=6.1-monitoreando
+AIRFLOW_CTX_TASK_ID=tarea1
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-29T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-29T00:00:00+00:00
+[2024-12-21T20:24:13.024+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-12-21T20:24:13.025+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'Tarea 1'"]
+[2024-12-21T20:24:13.036+0000] {subprocess.py:86} INFO - Output:
+[2024-12-21T20:24:15.046+0000] {subprocess.py:93} INFO - Tarea 1
+[2024-12-21T20:24:15.053+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-12-21T20:24:15.195+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=6.1-monitoreando, task_id=tarea1, execution_date=20220529T000000, start_date=20241221T202412, end_date=20241221T202415
+[2024-12-21T20:24:15.282+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-12-21T20:24:15.380+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,115 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Palindrome Checker</h1>
+        <input type="text" id="text-input" placeholder="Enter text...">
+        <button id="check-btn">Check</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+** end of undefined **
+
+** start of undefined **
+
+document.getElementById('check-btn').addEventListener('click', function() {
+    // Get user input
+    let originalInput = document.getElementById('text-input').value;
+
+    // If no input, alert user
+    if (originalInput.trim() === '') {
+        alert('Please input a value');
+        return;
+    }
+
+    // Clean the input: Remove non-alphanumeric characters and convert to lowercase
+    let cleanedInput = originalInput.toLowerCase().replace(/[^0-9a-z]/gi, '');
+
+    // Check if the cleaned input is a palindrome
+    if (isPalindrome(cleanedInput)) {
+        document.getElementById('result').textContent = `${originalInput} is a palindrome`;
+    } else {
+        document.getElementById('result').textContent = `${originalInput} is not a palindrome`;
+    }
+});
+
+function isPalindrome(str) {
+    // Reverse the string
+    let reversed = str.split('').reverse().join('');
+    // Check if original and reversed strings are the same
+    return str === reversed;
+}
+
+
+** end of undefined **
+

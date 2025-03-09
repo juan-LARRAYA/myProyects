@@ -1,0 +1,27 @@
+[2024-12-21T21:59:01.676+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: commiteando_cosas.crear_archivo_fecha_task scheduled__2024-12-21T21:58:00+00:00 [queued]>
+[2024-12-21T21:59:01.683+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: commiteando_cosas.crear_archivo_fecha_task scheduled__2024-12-21T21:58:00+00:00 [queued]>
+[2024-12-21T21:59:01.684+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-21T21:59:01.684+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2024-12-21T21:59:01.684+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-21T21:59:01.694+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): crear_archivo_fecha_task> on 2024-12-21 21:58:00+00:00
+[2024-12-21T21:59:01.696+0000] {standard_task_runner.py:55} INFO - Started process 9972 to run task
+[2024-12-21T21:59:01.699+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'commiteando_cosas', 'crear_archivo_fecha_task', 'scheduled__2024-12-21T21:58:00+00:00', '--job-id', '2726', '--raw', '--subdir', 'DAGS_FOLDER/elPataCommits.py', '--cfg-path', '/tmp/tmphp4gbhz5']
+[2024-12-21T21:59:01.700+0000] {standard_task_runner.py:83} INFO - Job 2726: Subtask crear_archivo_fecha_task
+[2024-12-21T21:59:01.745+0000] {task_command.py:376} INFO - Running <TaskInstance: commiteando_cosas.crear_archivo_fecha_task scheduled__2024-12-21T21:58:00+00:00 [running]> on host a39b43f32cb0
+[2024-12-21T21:59:01.810+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=commiteando_cosas
+AIRFLOW_CTX_TASK_ID=crear_archivo_fecha_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-21T21:58:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-12-21T21:58:00+00:00
+[2024-12-21T21:59:01.811+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-12-21T21:59:01.812+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        today_date=$(date \'+%Y-%m_%H-%M-%S\')\n        echo "Archivo creado el $today_date" > juan.txt\n        ']
+[2024-12-21T21:59:01.819+0000] {subprocess.py:86} INFO - Output:
+[2024-12-21T21:59:01.822+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-12-21T21:59:01.842+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=commiteando_cosas, task_id=crear_archivo_fecha_task, execution_date=20241221T215800, start_date=20241221T215901, end_date=20241221T215901
+[2024-12-21T21:59:01.885+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-12-21T21:59:01.903+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

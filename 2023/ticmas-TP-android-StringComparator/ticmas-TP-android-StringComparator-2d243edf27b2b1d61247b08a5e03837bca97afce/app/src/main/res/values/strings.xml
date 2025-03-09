@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Comparador de texto</string>
+    <string name="textEnterStrings">Ingrese las cadenas a comparar</string>
+    <string name="Text">Texto 1</string>
+    <string name="Text2">Texto 2</string>
+    <string name="ButtonText">Comparar</string>
+    <string name="AreEqual">Son iguales</string>
+    <string name="AreDifferent">Son distintas</string>
+    <string name="Null"> </string>
+</resources>

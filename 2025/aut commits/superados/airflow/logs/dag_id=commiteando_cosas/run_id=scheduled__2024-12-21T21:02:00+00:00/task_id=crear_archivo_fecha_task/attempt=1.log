@@ -1,0 +1,2 @@
+[2024-12-21T21:03:01.476+0000] {taskinstance.py:1159} INFO - Dependencies not met for <TaskInstance: commiteando_cosas.crear_archivo_fecha_task scheduled__2024-12-21T21:02:00+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'removed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'check'}
+[2024-12-21T21:03:01.478+0000] {local_task_job.py:103} INFO - Task is not able to be run
